@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="card html" />
+        <meta name="keyword" content="frontend software" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Card Form</title>
+    </head>
+    <body>
+        <form>
+            <h1>Laurel Schools Registration Form</h1>
+            <p>Kindly fill in the forms below appropriately</p>
+            <fieldset>
+                <label for="first-name">Enter your First Name: <input name="First-name" id="first-name" type="text" required /></label>
+                <label for="last-name">Enter your Last Name: <input name="Last-Name" id="last-name" type="text" required /></label>
+                <label for="email">Email Address: <input name="Email" id="Email" type="email" required /></label>
+                <label for="password">Password: <input id="password" name="password" type="password" required /></label>
+                <label for="phone-number">Phone Number: <input id="number" name="phone-number" type="number" /></label>
+            </fieldset>
+            <fieldset>
+                <label for="gender">Gender:</label>
+                <label for="male">Male <input id="male" name="male" type="radio" /></label>
+                <label for="female">Female <input id="female" name="female" type="radio" /></label>
+                <label for="other">Other <input id="other" name="other" type="radio" /></label>
+            </fieldset>
+            <fieldset>
+                <label for="profile-picture">Upload a Profile Picture: <input id="profile-picture" name="file" type="file" /></label>
+                <label for="age">Age(years): <input id="age" name="age" type="number" min="10" max="30" /></label>
+                <label>How did you hear about us?
+                    <select id="referrer" name="referrer">
+                        <option value="">(select one)</option>
+                        <option value="1">News</option>
+                        <option value="2">Forum</option>
+                        <option value="3">Youtube</option>
+                        <option value="4">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="hobbies">Hobbies: </label>
+                <label for="dancing">Dancing <input id="dancing" type="checkbox" name="dancing" /></label>
+                <label for="singing">Singing <input id="singing" name="singing" type="checkbox" /></label>
+                <label for="reading">Reading <input id="reading" name="reading" type="checkbox" /></label>
+            </fieldset>
+            <fieldset>
+                <label>I accept the <a href="https://www.termsfeed.com/blog/sample-small-business-terms-conditions-template/" >terms and conditions</a> <input class="inline" id="terms-and-conditions" name="terms-and-conditions" type="checkbox" /></label>
+            </fieldset>
+            <input type="submit" value="submit" />
+        </form>
+    </body>
+</html>
